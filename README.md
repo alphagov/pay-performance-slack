@@ -1,10 +1,12 @@
-# Pay Performance Slack
+# Pay Performance Slack
 
-Puts pay card performance stats into slack
+> As of September 2021 this repository is no longer actively maintained by the GOV.UK Pay team.
 
-# How to run
+Puts pay card performance stats into slack.
 
-## Specifying the slack channel
+## How to run
+
+### Specifying the slack channel
 
 Use the `CHANNEL` environment variable, for example:
 
@@ -12,7 +14,7 @@ Use the `CHANNEL` environment variable, for example:
 CHANNEL='#govuk-pay'
 ```
 
-## Node local
+### Node local
 
 ```
 SLACK_URI='https://hooks.slack.com/services/:a/:b/:c' \
@@ -25,7 +27,7 @@ node index.js
 # NODE_TLS_REJECT_UNAUTHORIZED will stop TLS from verifying when running locally
 ```
 
-## Docker local
+### Docker local
 
 ```
 docker build -t govukpay/performance-slack:local
